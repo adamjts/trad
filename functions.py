@@ -81,7 +81,7 @@ def bestFit(array_of_points, order = 2):
 
 	M_inverse = np.linalg.inv(M)
 
-	#all partial derivatives must equal zero
+	#make it also return the variance for this bestFit
 
 	return polynomial(np.dot(M_inverse, y_vector))
 
